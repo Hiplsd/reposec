@@ -1,0 +1,112 @@
+---
+# tasks file for telegram
+
+- name: Send notify to Telegram
+  community.general.telegram:
+    token: '5084498273:AAGEIJ3Gz1ouuHrC8v782KaPEZZNmLQJNAg'
+    api_args:
+      chat_id: -569181185
+      parse_mode: "markdown"
+      text: "Source IP Address {{ source_addresses }} has been blocked - Reason: {{ reason }}"
+      disable_web_page_preview: True
+      disable_notification: True
+  when: services == 'dvcqgdientaps'
+
+- name: Send notify to Telegram
+  community.general.telegram:
+    token: '5084498273:AAGEIJ3Gz1ouuHrC8v782KaPEZZNmLQJNAg'
+    api_args:
+      chat_id: -534424923
+      parse_mode: "markdown"
+      text: "Source IP Address {{ source_addresses }} has been blocked - Reason: {{ reason }}"
+      disable_web_page_preview: True
+      disable_notification: True
+  when: services == 'vnportals' and inventory_hostname == 'vnportal-2019'
+
+- name: Send notify to Telegram
+  community.general.telegram:
+    token: '5084498273:AAGEIJ3Gz1ouuHrC8v782KaPEZZNmLQJNAg'
+    api_args:
+      chat_id: -774880287
+      parse_mode: "markdown"
+      text: "Source IP Address {{ source_addresses }} has been blocked - Reason: {{ reason }}"
+      disable_web_page_preview: True
+      disable_notification: True
+  when: services == 'hanoinews'
+
+- name: Send notify to Telegram
+  community.general.telegram:
+    token: '5084498273:AAGEIJ3Gz1ouuHrC8v782KaPEZZNmLQJNAg'
+    api_args:
+      chat_id: -722112079
+      parse_mode: "markdown"
+      text: "Source IP Address {{ source_addresses }} has been blocked - Reason: {{ reason }}"
+      disable_web_page_preview: True
+      disable_notification: True
+  when: services == 'congthongtinchinhphu'
+
+- name: Send notify to Telegram
+  community.general.telegram:
+    token: '5721328645:AAFVpgkU22uY5EMPdBhSfEKll56FlUfC9h0'
+    api_args:
+      chat_id: -790502152
+      parse_mode: "markdown"
+      text: "[{{ services }}] Source IP Address {{ source_addresses }} has been blocked - Reason: {{ reason }}"
+      disable_web_page_preview: True
+      disable_notification: True
+  when: services == 'igatebca'
+  
+- name: Send notify to Telegram
+  community.general.telegram:
+    token: '5721328645:AAFVpgkU22uY5EMPdBhSfEKll56FlUfC9h0'
+    api_args:
+      chat_id: -790502152
+      parse_mode: "markdown"
+      text: "[{{ services }}] Source IP Address {{ source_addresses }} has been blocked - Reason: {{ reason }}"
+      disable_web_page_preview: True
+      disable_notification: True
+  when: services == 'eportaltnn'
+
+- name: Send notify to Telegram
+  community.general.telegram:
+    token: '5721328645:AAFVpgkU22uY5EMPdBhSfEKll56FlUfC9h0'
+    api_args:
+      chat_id: -790502152
+      parse_mode: "markdown"
+      text: "[{{ services }}] Source IP Address {{ source_addresses }} has been blocked - Reason: {{ reason }}"
+      disable_web_page_preview: True
+      disable_notification: True
+  when: services == 'igatettn'
+
+- name: Send notify to Telegram
+  community.general.telegram:
+    token: '5721328645:AAFVpgkU22uY5EMPdBhSfEKll56FlUfC9h0'
+    api_args:
+      chat_id: -790502152
+      parse_mode: "markdown"
+      text: "[{{ services }}] Source IP Address {{ source_addresses }} has been blocked - Reason: {{ reason }}"
+      disable_web_page_preview: True
+      disable_notification: True
+  when: services == 'ivan'
+  
+- name: Send notify to Telegram
+  community.general.telegram:
+    token: '5721328645:AAFVpgkU22uY5EMPdBhSfEKll56FlUfC9h0'
+    api_args:
+      chat_id: -790502152
+      parse_mode: "markdown"
+      text: "[{{ services }}] Source IP Address {{ source_addresses }} has been blocked - Reason: {{ reason }}"
+      disable_web_page_preview: True
+      disable_notification: True
+  when: services == 'vnedu'
+
+- name: Send notify to Telegram
+  community.general.telegram:
+    token: '5721328645:AAFVpgkU22uY5EMPdBhSfEKll56FlUfC9h0'
+    api_args:
+      chat_id: -790502152
+      parse_mode: "markdown"
+      text: "[{{ services }}] Source IP Address {{ source_addresses }} has been blocked - Reason: {{ reason }}"
+      disable_web_page_preview: True
+      disable_notification: True
+  when: services == 'qlts-bid'
